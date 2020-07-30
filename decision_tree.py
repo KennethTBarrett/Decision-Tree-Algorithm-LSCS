@@ -16,8 +16,8 @@ class Node:
         # If there's a 100% distribution, the data is pure. If there's not, it's
         p = self.probs()
         if p[0] == 1 or p[1] == 1:
-            return False
-        return True
+            return True
+        return False
     
 
     def split(self, depth=0):
